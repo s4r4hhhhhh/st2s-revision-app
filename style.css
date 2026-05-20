@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: Arial;
   background: linear-gradient(135deg, #cdb4db, #a2d2ff, #ffc8dd);
   color: #333;
 }
@@ -9,7 +9,7 @@ header {
   text-align: center;
   padding: 20px;
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -19,16 +19,23 @@ header {
 
 .card {
   background: rgba(255,255,255,0.75);
-  margin: 10px 0;
+  margin: 12px 0;
   padding: 15px;
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
+  border-radius: 18px;
 }
 
-button {
+a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
   background: #a2d2ff;
+  padding: 8px 12px;
+  border-radius: 10px;
+  color: black;
+}
+button {
+  background: #ffc8dd;
   border: none;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 10px;
 }
