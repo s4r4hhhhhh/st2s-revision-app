@@ -2,47 +2,119 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Biologie ST2S</title>
+<title>Bio ST2S Bac</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>🧬 Biologie & Santé</header>
+<header>🧬 BIOLOGIE & PHYSIOPATHOLOGIE HUMAINE - ST2S</header>
 
 <div class="container">
 
+  <!-- INTRO -->
   <div class="card">
-    <h2>📌 Définition santé</h2>
-    <p>La santé est un état de bien-être physique, mental et social (OMS).</p>
-  </div>
-
-  <div class="card">
-    <h2>🦠 Maladies</h2>
+    <h2>📌 La santé (définition OMS)</h2>
     <p>
-      - Infectieuses : virus, bactéries<br>
-      - Chroniques : diabète, cancer<br>
-      - Génétiques : anomalies ADN
+      La santé est un état de complet bien-être physique, mental et social,
+      et ne consiste pas seulement en une absence de maladie.
     </p>
   </div>
 
+  <!-- DETERMINANTS -->
   <div class="card">
-    <h2>🧠 Système immunitaire</h2>
+    <h2>🌍 Déterminants de santé</h2>
     <p>
-      - Globules blancs<br>
-      - Anticorps<br>
-      - Réponse immunitaire
+      Facteurs qui influencent la santé :
+      <br><br>
+      🧬 Biologiques : âge, génétique<br>
+      🏠 Environnement : pollution, logement<br>
+      🧑‍🤝‍🧑 Sociaux : revenus, éducation<br>
+      🧠 Comportements : alimentation, tabac, sport<br>
+      🏥 Accès aux soins
     </p>
   </div>
 
+  <!-- CELLULE -->
   <div class="card">
-    <h2>🧠 QUIZ</h2>
-    <button onclick="quizBio()">Lancer quiz</button>
-    <p id="bioResult"></p>
+    <h2>🧫 Organisation du vivant</h2>
+    <p>
+      Organisme → Système → Organe → Tissu → Cellule<br><br>
+
+      📌 La cellule est l’unité de base du vivant.<br>
+      Elle contient : noyau, cytoplasme, membrane.
+    </p>
+  </div>
+
+  <!-- MALADIES -->
+  <div class="card">
+    <h2>🦠 Les maladies</h2>
+
+    <p>
+      <b>Infectieuses :</b> virus, bactéries, parasites<br>
+      👉 Ex : grippe, COVID, tuberculose<br><br>
+
+      <b>Chroniques :</b> longue durée<br>
+      👉 Ex : diabète, cancer, asthme<br><br>
+
+      <b>Génétiques :</b> mutation ADN
+    </p>
+  </div>
+
+  <!-- IMMUNITÉ -->
+  <div class="card">
+    <h2>🛡️ Immunité</h2>
+    <p>
+      Défense de l’organisme contre les agents pathogènes.
+      <br><br>
+      🔹 Globules blancs<br>
+      🔹 Anticorps<br>
+      🔹 Réponse immunitaire innée (rapide)<br>
+      🔹 Réponse adaptative (spécifique)
+    </p>
+  </div>
+
+  <!-- INFLAMMATION -->
+  <div class="card">
+    <h2>🔥 Réaction inflammatoire</h2>
+    <p>
+      Réaction immédiate du corps :
+      <br>
+      - rougeur<br>
+      - chaleur<br>
+      - douleur<br>
+      - gonflement
+    </p>
+  </div>
+
+  <!-- PREVENTION -->
+  <div class="card">
+    <h2>💉 Prévention</h2>
+    <p>
+      🟢 Primaire : éviter la maladie (vaccins, hygiène)<br>
+      🟡 Secondaire : dépistage précoce<br>
+      🔴 Tertiaire : limiter les complications
+    </p>
+  </div>
+
+  <!-- SCHÉMA TEXTE -->
+  <div class="card">
+    <h2>📊 Schéma simple : infection</h2>
+    <p>
+      Agent pathogène → entrée dans le corps → réaction immunitaire → destruction ou maladie
+    </p>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="card">
+    <h2>🧠 QUIZ BAC</h2>
+    <button onclick="quizBio()">Démarrer le quiz</button>
+    <p id="resultBio"></p>
   </div>
 
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
