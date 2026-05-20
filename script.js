@@ -1,25 +1,34 @@
 function quizBio() {
-  let r = prompt("Définis la santé (OMS)");
+  let score = 0;
 
-  if (r && r.toLowerCase().includes("bien")) {
-    document.getElementById("bioResult").innerText = "✔️ Correct !";
-  } else {
-    document.getElementById("bioResult").innerText =
-    "❌ Réponse : état de bien-être physique, mental et social.";
-  }
-}
+  let q1 = prompt("Définis la santé (OMS)");
+  if (q1 && q1.toLowerCase().includes("bien")) score++;
 
-function quizSocial() {
-  let r = prompt("Cite un déterminant de santé");
+  let q2 = prompt("Cite 1 déterminant de santé");
+  if (q2 && (
+    q2.toLowerCase().includes("revenu") ||
+    q2.toLowerCase().includes("environnement") ||
+    q2.toLowerCase().includes("comportement") ||
+    q2.toLowerCase().includes("génétique")
+  )) score++;
 
-  if (r && (
-    r.toLowerCase().includes("revenu") ||
-    r.toLowerCase().includes("environnement") ||
-    r.toLowerCase().includes("mode de vie")
-  )) {
-    document.getElementById("socialResult").innerText = "✔️ Correct !";
-  } else {
-    document.getElementById("socialResult").innerText =
-    "❌ Ex : revenu, environnement, accès aux soins.";
-  }
+  let q3 = prompt("Donne un exemple de maladie chronique");
+  if (q3 && (
+    q3.toLowerCase().includes("diabète") ||
+    q3.toLowerCase().includes("cancer") ||
+    q3.toLowerCase().includes("asthme")
+  )) score++;
+
+  let q4 = prompt("Quel est le rôle des anticorps ?");
+  if (q4 && q4.toLowerCase().includes("défense")) score++;
+
+  let q5 = prompt("Donne un signe de l'inflammation");
+  if (q5 && (
+    q5.toLowerCase().includes("rougeur") ||
+    q5.toLowerCase().includes("douleur") ||
+    q5.toLowerCase().includes("gonflement")
+  )) score++;
+
+  document.getElementById("resultBio").innerText =
+    "🎯 Score BAC : " + score + "/5";
 }
